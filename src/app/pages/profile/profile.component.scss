@@ -13,7 +13,7 @@
 }
 
 .container-left .photo {
-  background: url('/assets/me.jpg') center/cover no-repeat;
+  background: url("/assets/me.jpg") center/cover no-repeat;
 }
 
 /* 70% conteúdo */
@@ -33,10 +33,16 @@
 }
 
 .avatar-large {
-  width: 250px;      /* ajusta para o tamanho que quiser */
+  width: 250px; /* ajusta para o tamanho que quiser */
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+mat-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* espaçamento horizontal e vertical */
 }
 
 @media (max-width: 768px) {

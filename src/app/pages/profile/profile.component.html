@@ -5,7 +5,7 @@
 <div *ngIf="profile" class="container">
   <!-- Sidebar -->
   <mat-card class="container-left">
-        <mat-card-header>
+    <mat-card-header>
       <div class="avatar-container">
         <img
           mat-card-avatar
@@ -81,9 +81,8 @@
     <section>
       <h2>Skills</h2>
       <mat-chip-list>
-        <!-- precisa existir esse container -->
         <mat-chip *ngFor="let skill of profile.skills">
-          {{ skill }}
+            {{ skill }}
         </mat-chip>
       </mat-chip-list>
     </section>

@@ -65,7 +65,16 @@
         ]
       }
     ],
-
-    "skills": ["Angular", "TypeScript", "SCSS", "JSON"]
+    "skills": [
+      "Angular",
+      "TypeScript",
+      "SCSS",
+      "JSON",
+      "Java",
+      "Ethical Hacking",
+      "React",
+      "Next.js",
+      "Q#"
+    ]
   }
 }
