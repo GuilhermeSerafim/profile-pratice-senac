@@ -48,10 +48,18 @@ mat-chip-list {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    gap: 1rem; /* espaço vertical entre os blocos */
+    padding: 0 1rem; /* padding lateral para “respirar” nas laterais */
   }
+
   .container-left,
   .container-right {
     flex: none;
     width: 100%;
+  }
+
+  /* Se você quiser um espaçamento extra só na direita do conteúdo principal: */
+  section {
+    padding-right: 2rem;
   }
 }
