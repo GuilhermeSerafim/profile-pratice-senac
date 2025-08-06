@@ -1,0 +1,91 @@
+<mat-toolbar color="primary">
+  <span>{{ profile.name }}</span>
+</mat-toolbar>
+
+<div *ngIf="profile" class="container">
+  <!-- Sidebar -->
+  <mat-card class="container-left">
+        <mat-card-header>
+      <div class="avatar-container">
+        <img
+          mat-card-avatar
+          [src]="profile.photo"
+          alt="{{ profile.name }}"
+          class="avatar-large"
+        />
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Email:</strong> {{ profile.email }}</p>
+      <p><strong>Data Nascimento:</strong> {{ profile.birthDate }}</p>
+      <p><strong>Phone:</strong> {{ profile.phone }}</p>
+      <p>
+        <a
+          mat-button
+          color="accent"
+          href="{{ profile.linkedin }}"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </p>
+      <p>
+        <a
+          mat-button
+          color="accent"
+          href="{{ profile.github }}"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Conteúdo principal -->
+  <div class="container-right">
+    <section>
+      <h2>Experiência</h2>
+      <mat-card *ngFor="let exp of profile.experience" class="mb-card">
+        <mat-card-header>
+          <mat-card-title>{{ exp.role + " @ " + exp.company }}</mat-card-title>
+          <mat-card-subtitle
+            >{{ exp.start }} – {{ exp.end || "Hoje" }}</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <li *ngFor="let it of exp.description">{{ it }}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <mat-card *ngFor="let ed of profile.education" class="mb-card">
+        <mat-card-header>
+          <mat-card-title>{{ ed.course }}</mat-card-title>
+          <mat-card-subtitle>
+            {{ ed.institution }} ({{ ed.start }} – {{ ed.end }})
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <ul>
+            <li *ngFor="let it of ed.description">{{ it }}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <mat-chip-list>
+        <!-- precisa existir esse container -->
+        <mat-chip *ngFor="let skill of profile.skills">
+          {{ skill }}
+        </mat-chip>
+      </mat-chip-list>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+/* nome centralizado no mat-toolbar */
+
+.container {
+  display: flex;
+  gap: 1rem;
+  min-height: calc(100vh - 64px); /* desconta toolbar */
+}
+
+/* 30% sidebar */
+.container-left {
+  flex: 0 0 30%;
+  padding: 1rem;
+}
+
+.container-left .photo {
+  background: url('/assets/me.jpg') center/cover no-repeat;
+}
+
+/* 70% conteúdo */
+.container-right {
+  flex: 1 0 70%;
+  padding: 1rem;
+}
+
+.mb-card {
+  margin-bottom: 1rem;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar-large {
+  width: 250px;      /* ajusta para o tamanho que quiser */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container-left,
+  .container-right {
+    flex: none;
+    width: 100%;
+  }
+}

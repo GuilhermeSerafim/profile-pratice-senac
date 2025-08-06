@@ -1,0 +1,71 @@
+{
+  "profile": {
+    "name": "Guilherme da Silva Serafim",
+    "photo": "assets/me.jpeg",
+    "birthDate": "07/07/2004",
+    "email": "guilerstudies@gmail.com",
+    "phone": "+55 11 97034-9947",
+    "linkedin": "https://linkedin.com/in/guilerserafim",
+    "github": "https://github.com/GuilhermeSerafim",
+
+    "experience": [
+      {
+        "company": "Quipux",
+        "role": "Desenvolvedor Full Stack Pleno",
+        "start": "2025-04-01",
+        "end": null,
+        "description": [
+          "Atuação em ambiente com monorepo, contribuindo com libs reutilizáveis, modernização de telas complexas e consumo de APIs em microserviços.",
+          "Evolução de APIs, padronização de contratos e reforço da confiabilidade de endpoints críticos.",
+          "Otimização de queries, correção de inconsistências funcionais e alinhamento com QA e área de negócio."
+        ]
+      },
+      {
+        "company": "Tokio Marine Seguradora",
+        "role": "Desenvolvedor Full Stack | Jovem Aprendiz",
+        "start": "2023-08-01",
+        "end": "2024-11-30",
+        "description": [
+          "Otimizei a performance de consultas e procedimentos, proporcionando uma navegação mais ágil e eficaz.",
+          "Implementei melhorias de usabilidade que aumentaram a satisfação e produtividade dos usuários finais.",
+          "Padronizei elementos visuais e funcionais na interface, garantindo consistência e facilitando a navegação.",
+          "Aprimorei a escalabilidade do sistema, facilitando futuras expansões e a integração de novos módulos.",
+          "Implementei integração com API interna para recuperação dinâmica de endereço ao preencher o CEP na plataforma de cobranças, reduzindo tempo manual e aumentando a precisão das informações."
+        ]
+      }
+    ],
+
+    "education": [
+      {
+        "institution": "Centro Universitário Senac",
+        "course": "Tecnólogo em Análise e Desenvolvimento de Sistemas, Tecnologia da Informação",
+        "start": "2024-08-01",
+        "end": "2026-12-31",
+        "description": [
+          "+2.000 horas de formação técnica com aplicação prática",
+          "Desenvolvimento de sistemas web, mobile e desktop",
+          "Lógica, estrutura de dados, arquitetura e banco de dados",
+          "Projetos integradores com foco em soluções reais",
+          "Segurança, testes, cloud e boas práticas de desenvolvimento",
+          "Metodologias ágeis, inovação e pensamento computacional"
+        ]
+      },
+      {
+        "institution": "ETEC - Escola Técnica Estadual de São Paulo",
+        "course": "Curso Técnico Integrado em Tecnologia da Informação (MTEC)",
+        "start": "2020-02-01",
+        "end": "2022-12-31",
+        "description": [
+          "Lógica de programação, algoritmos e estruturas de dados",
+          "Modelagem de dados e bancos de dados relacionais",
+          "Análise e projeto de sistemas com documentação técnica",
+          "Desenvolvimento de software para desktop, web e dispositivos móveis",
+          "Versionamento e testes de aplicações",
+          "Programação orientada a objetos com Java"
+        ]
+      }
+    ],
+
+    "skills": ["Angular", "TypeScript", "SCSS", "JSON"]
+  }
+}
