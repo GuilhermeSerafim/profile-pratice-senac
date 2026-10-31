@@ -1,3 +1,11 @@
+# Perfil com rotas em Angular
+
+Exercício de interface de perfil com Angular 19 e Angular Material. O código define uma página inicial e a rota `/profile`; o componente de perfil consome dados via `ProfileService` em `http://localhost:3000/profile`.
+
+O repositório inclui `db.json` e a dependência JSON Server para apoio local. O servidor da interface não inicia esse serviço automaticamente: os scripts do pacote cobrem Angular, build e testes. Antes de usar os dados de exemplo, revise seu conteúdo.
+
+## Ambiente Angular CLI
+
 # AngularRotas
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
